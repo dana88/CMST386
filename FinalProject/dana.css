@@ -49,26 +49,28 @@ header {
     color: black;
     }
 h1 {text-align:center;
-    font-family: 'Lobster',sans-serif;
+    font-family: 'Ariel';
     color:black;
     font-size:xx-large;
     }
 h2 {text-align:center;
-font-family: 'Lobster',sans-serif;
+font-family: 'Ariel';
     color:black;
-    font-size:x-large;
+    font-size:large;
 }
 h3 {text-align:center;
-font-family: 'Lobster', sans-serif;
+font-family: 'Ariel';
     color:black;
     }
 p  {text-align:center;
-font-family: 'Lobster', sans-serif;
+font-family: 'Ariel';
     color:black;
+    font-size:large;
   }
 ul {text-align:center;
-font-family: 'Lobster', sans-serif;
+font-family: 'Ariel';
     color:black;
+    font-size:large;
     }
 table {
     color: #800080;
@@ -82,14 +84,7 @@ th,
 td{
     padding: 10px 15px;
 }
-#MyMap {text-align:center}
-#btroll a{
-    display: inline-block;
-    height: 50px;
-    width: 124px;
-    background: url("btroll.gif") no-repeat;
-    text-decoration: none;
-    float: left;
-    border: red;
+img {
+  display:block;
+  margin:auto;
 }
-#btroll a:hover{background-position: 0-50px}

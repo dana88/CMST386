@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Exercise 3-Temperatures</title>
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="cloudflare.css">
+<body>
+
+<button onclick="myFunction()">Click Here</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var person = prompt("Please enter a temperature to convert", "120");
+
+    if (person != null) {
+        document.getElementById("demo").innerHTML =
+       "Hello" + person + "Please Visit my Temperature Converter";
+    }
+}
+</script>
+
+<h1>JavaScript Celcius to Fahrenhet</h1>
+
+<p>Insert a number into one of the input fields below:</p>
+
+<script>
+function convert(degree) {
+    var x;
+    if (degree == "C") {
+        x = document.getElementById("c").value * 9 / 5 + 32;
+        document.getElementById("f").value = (x);
+    } else {
+        x = (document.getElementById("f").value -32) * 5 / 9;
+        document.getElementById("c").value = (x);
+    }
+}
+</script>
+<form>
+  <p><input id="c" onchange="convert('C')"> degrees Celsius</p>
+
+  <p><input id="f" onchange="convert('F')"> degrees Fahrenheit</p>
+</form>
+
+</body>
+</html>
