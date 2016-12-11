@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Totes and Thermals</title>
+  <title>Exercise 3-Temperature Prompt</title>
   <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="cloudflare.css">
@@ -54,14 +54,21 @@
   </div>
 </head>
 <body>
-<h1>Totes and Thermals</h1>
-<img id="perfect" alt="" src="perfect.gif" width="150" height="150"><h2>Perfect Party Set</h2>
-<p>The name explains itself.  This perfect party set allows you to transport multiple dishes at a time.  It is lined with a spill proof protectant that can be easily cleaned during a spill.  This thermal also provide additional storage for other items such as spoons, napkins, etc.  Size: 6"H x 16.25"L x 10.25"D (when expanded) </p>
-<h2>$60</h2>
-<img id="feed" alt="" src="feed.gif" width="150" height="150"><h2>Around the Clock Thermal</h2>
-<p>If you are looking to keep your lunch cold or hot, this is the perfect bag.  The inner lining allows you to store hot and cold food.  Additional Pockets are perfect for extra items such as utensils, straws, etc.  It also allows you to adjust the strap to fit your size.
-Size: Approx. 8.75"H x 9.75" L x 6" D </p>
-<h2>$30</h2>
-<img id="duffle" alt="" src="duffle.gif" width="150" height="150"><h2>All Packed Duffle</h2>
-<p>This is the perfect gym bag.  Pack all of your clothing items inside.  Additional storage is provided with a netted liner that keeps shoes from holding in odors.  There is also an adjustable shoulder strap.  Even more perfect, you can personalize this bag with your own name. Size: Approx. 11”H x 22”L x 12”D </p>
-<h2>$30</h2>
+
+<script>
+var newtemp= 0;
+var temptype= window.prompt ("Is your temperature Celcius or Fahrenheit ("C or F",)","");
+var temp= window.prompt ("Please enter your temperature","");
+if (temptype == "C") {
+    newtemp = temp * 9 / 5 + 32;
+    document.write ("Your new Temperature is" + newtemp+"F");
+}
+else if (temptype=="F") {
+     newtemp=(temp-32) * 5 / 9;
+     document.write ("Your new Temperature is" + newtemp+"C");
+  else document.write ("Please enter C or F");
+}
+      document.write ("Please refresh the page to start again")
+</script>
+</body>
+</html>
