@@ -11,6 +11,9 @@
     <link rel="stylesheet" type="text/css" href="w3.css">
     <link rel="stylesheet" type="text/css" href="w3.css">
       <link rel="stylesheet" type="text/css" href="dana.css">
+      <script type="text/javascript" src="java.js"></script>
+
+
   <div class="w3-container">
     <h1>Dana Lucio</h1>
     <ul class="w3-navbar w3-card-2 w3-light-grey">
@@ -55,20 +58,10 @@
 </head>
 <body>
 
-<script>
-var newtemp= 0;
-var temptype= window.prompt ("Is your temperature Celcius or Fahrenheit ("C or F",)","");
-var temp= window.prompt ("Please enter your temperature","");
-if (temptype == "C") {
-    newtemp = temp * 9 / 5 + 32;
-    document.write ("Your new Temperature is" + newtemp+"F");
-}
-else if (temptype=="F") {
-     newtemp=(temp-32) * 5 / 9;
-     document.write ("Your new Temperature is" + newtemp+"C");
-  else document.write ("Please enter C or F");
-}
-      document.write ("Please refresh the page to start again")
-</script>
+  <div>
+    <div>
+    <p>Click the button below to use my temperature converter.</p>
+        <button onclick="converter()">Temp Converter</button></div>
+  </div>
 </body>
 </html>
