@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Shrikhand');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import
+url('https://fonts.googleapis.com/css?family=Lobster');
+
+body{
+    background:url(RepeatPattern.png);
+    background-attachment:fixed;
+    background-image:-webkit-linear-gradient(top,#000,gray);
+    background-image:-moz-linear-gradient(top,#000,gray);
+    background-image:-ms-linear-gradient(top,#000,gray);
+    background-image:-o-linear-gradient(top,#000,gray);
+    background-image:linear-gradient(top,#000,gray);
+    background-image:url("background.gif");
+    background-position:center center;
+    background-attachment:fixed;
+    -webkit-backgound-size:cover;
+    -moz-background-size:cover;
+    o-background-size:cover;
+    background-size:cover;
+
+    font-family: Arial;
+    font-size:62.5%;
+    margin:0;
+    padding:0;
+}
+*{
+  margin:0;
+  padding:0;
+}
+.wrapper{
+  font-size:1.6em;
+  padding:0 auto;
+  width:900px;
+  height:2000px;
+  background-color:white;
+  background-image:url("flower.png");
+  background-repeat:no-repeat;
+  background-position:bottom right;
+  background:url("flower.png") top right no-repeat;
+  url ("flower.png") bottom right no-repeat, #fff;
+  opacity: 0.9;
+
+}
+header {
+    font-family: 'Shrikhand';
+    text-align: center;
+    width: 800px;
+    color: black;
+    }
+h1 {text-align:center;
+    font-family: 'Lobster',sans-serif;
+    color:black;
+    font-size:xx-large;
+    }
+h2 {text-align:center;
+font-family: 'Lobster',sans-serif;
+    color:black;
+    font-size:x-large;
+}
+h3 {text-align:center;
+font-family: 'Lobster', sans-serif;
+    color:black;
+    }
+p  {text-align:center;
+font-family: 'Lobster', sans-serif;
+    color:black;
+  }
+ul {text-align:center;
+font-family: 'Lobster', sans-serif;
+    color:black;
+    }
+table {
+    color: #800080;
+    border-collapse: separate;
+    border-spacing: 4px;
+    }
+table,
+th,
+td {border:1px solid #800080;}
+th,
+td{
+    padding: 10px 15px;
+}
+#MyMap {text-align:center}
+#btroll a{
+    display: inline-block;
+    height: 50px;
+    width: 124px;
+    background: url("btroll.gif") no-repeat;
+    text-decoration: none;
+    float: left;
+    border: red;
+}
+#btroll a:hover{background-position: 0-50px}
